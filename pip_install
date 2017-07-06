@@ -1,0 +1,8 @@
+#!/bin/bash
+# ./pip_install
+
+# pip v1.5+ security requirement
+# PIL comes from effbot.org (add --allow-external)
+# PyPi doesn't have a checksum to guarantee validity for PIL (add --allow-unverified).
+pip install -r requirements.txt --allow-external PIL --allow-unverified PIL
+
